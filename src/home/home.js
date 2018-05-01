@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import {
+  Button,
   StyleSheet,
   Text,
   View
 } from 'react-native';
 
 export default class Home extends Component {
-  componentDidMount() {
-    this.props.getTest();
-  }
-
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{this.props.test}</Text>
+        <Button title="press me" onPress={this.props.getTest} />
       </View>
     );
   }

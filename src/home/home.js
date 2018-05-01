@@ -5,13 +5,15 @@ import {
   View
 } from 'react-native';
 
-export default class App extends Component {
+export default class Home extends Component {
+  componentDidMount() {
+    this.props.getTest();
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>Welcome to React Sandbox</Text>
-        <Text style={styles.text}>Cmd+R to reload</Text>
-        <Text style={styles.text}>Cmd+D for dev tools</Text>
+        <Text style={styles.title}>{this.props.test}</Text>
       </View>
     );
   }

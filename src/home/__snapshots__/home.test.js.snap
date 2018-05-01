@@ -22,31 +22,7 @@ exports[`renders landing message correctly 1`] = `
       }
     }
   >
-    Welcome to React Sandbox
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333333",
-      }
-    }
-  >
-    Cmd+R to reload
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#333333",
-      }
-    }
-  >
-    Cmd+D for dev tools
+    hey
   </Text>
 </View>
 `;

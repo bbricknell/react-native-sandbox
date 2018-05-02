@@ -1,16 +1,17 @@
 import { connect } from 'react-redux';
 import { Home } from '../home/home';
+import { getTestText } from '../actions/test-actions';
 
 function mapStateToProps(state) {
   return {
-    test: state.test.hello
+    text: state.test.text
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    getTest: () => {
-      dispatch({type: 'TEST'});
+    getText: () => {
+      dispatch(getTestText());
     }
   };
 }

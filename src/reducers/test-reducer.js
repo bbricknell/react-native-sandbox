@@ -1,7 +1,9 @@
-export function test(state = { hello: 'heeelo' }, action) {
+import { testAction } from '../actions/test-actions';
+
+export function test(state = { text: 'test' }, action) {
   switch(action.type) {
-    case 'TEST':
-      return {...state, hello: 'test'};
+    case testAction:
+      return {...state, text: action.text};
     default:
       return state;
   }

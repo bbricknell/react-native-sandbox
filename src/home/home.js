@@ -10,8 +10,8 @@ export class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.title}>{this.props.test}</Text>
-        <Button title="press me" onPress={this.props.getTest} />
+        <Text style={styles.title}>{this.props.text}</Text>
+        <Button title="press me" onPress={this.props.getText} />
       </View>
     );
   }

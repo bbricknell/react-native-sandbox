@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { Home } from '../home/home';
+import { Home } from '../components/home/home';
 import { getTestText } from '../actions/test-actions';
 
 function mapStateToProps(state) {

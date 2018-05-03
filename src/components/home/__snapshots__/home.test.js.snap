@@ -24,6 +24,13 @@ exports[`renders landing message correctly 1`] = `
   >
     hey
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    90
+  </Text>
   <View
     accessibilityComponentType="button"
     accessibilityLabel={undefined}

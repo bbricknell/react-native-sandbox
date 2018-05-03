@@ -4,6 +4,6 @@ import Renderer from 'react-test-renderer';
 import { Home } from './home';
 
 test('renders landing message correctly', () => {
-  const home = Renderer.create(<Home text="hey" getText={() => {}}/>).toJSON();
+  const home = Renderer.create(<Home text="hey" getText={() => {}} data={{ip: '90'}}/>).toJSON();
   expect(home).toMatchSnapshot();
 });

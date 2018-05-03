@@ -4,7 +4,8 @@ import { getTestText } from '../actions/test-actions';
 
 function mapStateToProps(state) {
   return {
-    text: state.test.text
+    text: state.test.text,
+    data: state.test.data
   };
 }
 

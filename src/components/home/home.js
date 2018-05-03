@@ -11,6 +11,7 @@ export class Home extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>{this.props.text}</Text>
+        <Text>{this.props.data.ip}</Text>
         <Button title="press me" onPress={this.props.getText} />
       </View>
     );

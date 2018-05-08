@@ -4,6 +4,8 @@ import {
   Text,
   View
 } from 'react-native';
+import PropTypes from 'prop-types';
+
 import { Button } from '../button/button';
 
 export class Home extends Component {
@@ -30,3 +32,15 @@ const styles = StyleSheet.create({
     marginBottom: 10
   }
 });
+
+Home.propTypes = {
+  text: PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    ip: PropTypes.string,
+    city: PropTypes.string,
+    region: PropTypes.string,
+    country: PropTypes.string,
+    org: PropTypes.string
+  }),
+  getText: PropTypes.func.isRequired
+};

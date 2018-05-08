@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
 
 export class Button extends Component {
   render() {
@@ -28,3 +29,8 @@ const styles = StyleSheet.create({
     color: '#5F9EA0'
   }
 });
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  clickAction: PropTypes.func.isRequired
+};

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import {
-  Button,
   StyleSheet,
   Text,
   View
 } from 'react-native';
+import { Button } from '../button/button';
 
 export class Home extends Component {
   render() {
@@ -12,7 +12,7 @@ export class Home extends Component {
       <View style={styles.container}>
         <Text style={styles.title}>{this.props.text}</Text>
         <Text>{this.props.data.ip}</Text>
-        <Button title="press me" onPress={this.props.getText} />
+        <Button text="Get Info" clickAction={this.props.getText} />
       </View>
     );
   }

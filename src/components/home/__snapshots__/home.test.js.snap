@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders landing message correctly 1`] = `
+exports[`Home Component renders landing message correctly 1`] = `
 <View
   style={
     Object {
@@ -32,13 +32,9 @@ exports[`renders landing message correctly 1`] = `
     90
   </Text>
   <View
-    accessibilityComponentType="button"
+    accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
-    }
+    accessibilityTraits={undefined}
     accessible={true}
     collapsable={undefined}
     hasTVPreferredFocus={undefined}
@@ -54,38 +50,34 @@ exports[`renders landing message correctly 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
+        "borderColor": "#5F9EA0",
+        "borderRadius": 50,
+        "borderWidth": 2.5,
+        "marginVertical": 10,
+        "minHeight": 50,
+        "minWidth": 100,
         "opacity": 1,
+        "padding": 10,
       }
     }
     testID={undefined}
     tvParallaxProperties={undefined}
   >
-    <View
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
       style={
-        Array [
-          Object {},
-        ]
+        Object {
+          "color": "#5F9EA0",
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={undefined}
-        ellipsizeMode="tail"
-        style={
-          Array [
-            Object {
-              "color": "#007AFF",
-              "fontSize": 18,
-              "padding": 8,
-              "textAlign": "center",
-            },
-          ]
-        }
-      >
-        press me
-      </Text>
-    </View>
+      Get Info
+    </Text>
   </View>
 </View>
 `;
